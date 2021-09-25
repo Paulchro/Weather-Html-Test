@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Weather app</h1>
+        <label for="name">Type a location: </label>
+
+        <div>
+            <input type="text" id="location" name="name" required minlength="3" maxlength="15" onchange="clearList()"
+                placeholder="Type a city...">
+
+            <input type="submit" id="locationbtn" value="Search" onclick="getData()" />
+        </div>
+
+        <div>
+            <select onchange="select(this)" id="selectLocation">
+                <option>Choose a location</option>
+            </select>
+        </div>
+
+        <h3>5 days forecast for: <span id="selectedLoc"></span></h1>
+            <table id="weather"></table>
+    </div>
+
+</body>
+<script>
+
+
+</script>
+
+</html>
